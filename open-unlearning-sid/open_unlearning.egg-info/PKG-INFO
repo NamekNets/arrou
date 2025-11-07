@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: open-unlearning
+Version: 0.1.0
+Summary: A library for machine unlearning in LLMs.
+Home-page: https://github.com/locuslab/open-unlearning
+Author: Vineeth Dorna, Anmol Mekala
+Author-email: vineethdorna@gmail.com, m.anmolreddy@gmail.com
+License: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: huggingface-hub==0.29.1
+Requires-Dist: transformers==4.45.1
+Requires-Dist: numpy==2.2.3
+Requires-Dist: hydra-core==1.3
+Requires-Dist: hydra_colorlog==1.2.0
+Requires-Dist: torch==2.4.1
+Requires-Dist: datasets==3.0.1
+Requires-Dist: accelerate==0.34.2
+Requires-Dist: bitsandbytes==0.44.1
+Requires-Dist: rouge-score==0.1.2
+Requires-Dist: scipy==1.14.1
+Requires-Dist: tensorboard==2.18.0
+Requires-Dist: scikit-learn==1.5.2
+Requires-Dist: deepspeed==0.15.4
+Provides-Extra: lm-eval
+Requires-Dist: lm-eval==0.4.8; extra == "lm-eval"
+Provides-Extra: dev
+Requires-Dist: pre-commit==4.0.1; extra == "dev"
+Requires-Dist: ruff==0.6.9; extra == "dev"
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license
+Dynamic: license-file
+Dynamic: provides-extra
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+For Rest of the open-unlearning documentation refer to the original repository.
+
+clone this repo with `--recursive`
+
+
+For running our eval experiments on WMDP dataset:
+
+```
+bash eval.sh {method} {unlearning_task}
+```
+
+method -> ga or rmu 
+
+unlearning_task -> bio or cyber
+
+
+
+`tofu_rome.py` for applying ROME/r-ROME knowledge edit methods on TOFU dataset
+

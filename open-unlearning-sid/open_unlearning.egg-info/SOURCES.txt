@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+open_unlearning.egg-info/PKG-INFO
+open_unlearning.egg-info/SOURCES.txt
+open_unlearning.egg-info/dependency_links.txt
+open_unlearning.egg-info/requires.txt
+open_unlearning.egg-info/top_level.txt
