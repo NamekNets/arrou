@@ -115,6 +115,10 @@ Common pitfalls & fixes
 - Subject inconsistency: unlearning is stronger when all items for an entity share an identical subject string that appears verbatim in the question (use --normalize_subjects).
 - OOM during safe subspace: the code already streams retain prompts in mini‑batches and moves activations to CPU; reduce max_prompts/batch_size if needed.
 
+
+Links for dataset and weights: https://drive.google.com/drive/folders/1lt_u8rwMVSebGes_vM_pBM8JXmcbfrza?usp=sharing
+
+
 FAQ
 ---
 - Does this overwrite my HF cache?
